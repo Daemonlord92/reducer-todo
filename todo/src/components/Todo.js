@@ -1,15 +1,16 @@
 import React from 'react'
+import { Card } from 'reactstrap'
 import PropTypes from 'prop-types'
 
 const Todo = ({ onClick, completed, text }) => (
-    <li
+    <Card
         onClick={onClick}
         style={{
             textDecoration: completed ? 'line-through' : 'none'
         }}
     >
         {text}
-    </li>
+    </Card>
 )
 
 Todo.propTypes = {
